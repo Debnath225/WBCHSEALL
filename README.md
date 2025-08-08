@@ -1,2 +1,2 @@
 # WBCHSEALL
-Practicse all of yourb syllabus
+Practicse all of your syllabus

@@ -86,7 +86,7 @@ body{
   .opt.correct{background:rgba(16,185,129,0.12);border-color:rgba(16,185,129,0.25)}
   .opt.incorrect{background:rgba(239,68,68,0.08);border-color:rgba(239,68,68,0.25)}
 
-  .small{font-size:13px;color:var(--muted);margin-top:8px}
+  .small{font-size:13px;color:var(--muted);margin-top:25px}
 
   /* right: info panel */
   .info{

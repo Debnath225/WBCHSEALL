@@ -71,6 +71,11 @@
     .start-btn:hover {
       background: #1d4ed8;
     }
+     .start-btn:active {
+      background: #1e40af;
+      scale: 0.98;
+      transition: scale 0.1s;
+    }
     @media (max-width: 600px) {
       .container {
         padding: 8px;

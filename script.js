@@ -151,9 +151,11 @@ function prepareQuestions(pool, desiredCount){
     if(toggle) {
     document.getElementById('hintText').style.display = 'none';
      toggle = 0;
+      btnHint.textContent = 'Show Hint';
     } else {
     document.getElementById('hintText').style.display = 'block';
       toggle = 1;
+      btnHint.textContent = 'Hide Hint';
     }
   });
 // Render current question

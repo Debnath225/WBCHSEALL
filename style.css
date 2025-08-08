@@ -34,9 +34,12 @@
   .meta{color:var(--muted);font-size:13px}
 
   .body{display:grid;grid-template-columns: 1fr 340px;gap:18px}
-  @media (max-width:900px){ .body{grid-template-columns:1fr;
-                                 padding:0px} }
-
+  @media (max-width:900px){ .body{grid-template-columns:1fr;} }
+@media only and (width <=400px){
+body{
+ padding:0px;
+}
+}
   /* left: quiz panel */
   .quiz{
     padding:18px;border-radius:12px;background:linear-gradient(180deg,var(--glass),#fff);

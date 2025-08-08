@@ -16,7 +16,7 @@ let results = []; // store user answer records
 const chapterName = document.getElementById('chapterName');
 const questionText = document.getElementById('questionText');
 const optionsWrap = document.getElementById('optionsWrap');
-const questionHint = document.getElementById('questionHint');
+const hintContent = document.getElementById('hintContent');
 const progBar = document.getElementById('progBar');
 const qIndex = document.getElementById('qIndex');
 const scoreEl = document.getElementById('score');
@@ -140,7 +140,21 @@ function prepareQuestions(pool, desiredCount){
   });
   return pick;
 }
-
+function hintToggled(){
+ let toggle =0;
+  const btnHint = document.getElementById('btnHint');
+  btnHint.addEventListener('click', () => {
+    toggle = toggle ? 0 : 1; // toggle between 0 and 1
+    if(toggle) {
+    document.getElementById('hintText').style.display = 'none';
+     return 0;
+    } else {
+    document.getElementById('hintText').style.display = 'block';
+     return 1;
+  
+    }
+  });
+}
 // Render current question
 function renderQuestion(){
   if(!shuffledQuestions.length) {
@@ -153,10 +167,11 @@ function renderQuestion(){
   let qtext = '';
   if(q.type === 'identify_formula'){
     qtext = `Which of the following is the correct formula for: "${q.name}"?`;
-    questionHint.textContent = q.description || "";
+
+    (hintToggled())?(hintContent.textContent = q.description || "No hint available") : hintContent.textContent="";
   } else if(q.type === 'term_meaning'){
     qtext = `In the formula "${q.formula || ''}", what does "${q.term}" represent?`;
-    questionHint.textContent = q.description || "";
+    (hintToggled())?(hintContent.textContent = q.description || "No hint available") :hintContent.textContent="";
   } else {
     qtext = q.name || "Identify the correct option";
   }

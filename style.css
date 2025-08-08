@@ -55,8 +55,13 @@ body{
     padding:18px;border-radius:12px;background:linear-gradient(180deg,var(--glass),#fff);
     min-height:360px;
   }
-  .chapter{font-size:13px;color:var(--muted);margin-bottom:8px}
-  .qtext{font-size:18px;margin:6px 0 18px}
+  .chapter{font-size:17px;color:var(--muted);margin-bottom:8px}
+  .qtext{
+    background-color: cyan;
+    padding: 5px;
+    border-radius: 0.4rem;
+    font-size:18px;
+    margin:6px 0 18px}
   .options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
   @media (max-width:540px){ .options{grid-template-columns:1fr} }
 

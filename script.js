@@ -362,7 +362,20 @@ function prepareQuestions(pool, desired){
 async function loadJSON(force=false){
   try{
     // load physics.json from same folder
-    const res = await fetch('physics12.json', {cache: force ? 'reload' : 'default'});
+    let url;
+    const getClass = localStorage.getItem('selectedClass');
+    switch(getClass){
+      case '5': url = 'physics-5.json'; break;
+      case '6': url = 'physics-6.json'; break;
+      case '7': url = 'physics-7.json'; break;
+      case '8': url = 'physics-8.json'; break;
+      case '9': url = 'physics-9.json'; break;
+      case '10': url = 'physics-10.json'; break; 
+      case '11': url = 'physics-11.json'; break;
+      case '12': url = 'physics-12.json'; break;
+      default: url = 'physics.json'; break; // default fallback
+    }
+    const res = await fetch(`${url}`, {cache: force ? 'reload' : 'default'});
     if(!res.ok) throw new Error('Failed to load physics.json — make sure it is served from same folder and accessible.');
     dataJSON = await res.json();
     metaRight.textContent = `Loaded: ${dataJSON.chapters ? dataJSON.chapters.length : '0'} chapters`;

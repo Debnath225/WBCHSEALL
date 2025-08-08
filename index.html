@@ -65,12 +65,8 @@
   </div>
   <script>
     function startQuiz(classNum) {
-        // Redirect to the quiz page for the selected class
-        // Get the class number from the URL query parameter
-  const urlParams = new URLSearchParams(window.location.search);
-  const classNum = urlParams.get('class');
-  console.log(classNum); // 
-        window.location.href = `quiz.html`;
+     localStorage.setItem('selectedClass', JSON.stringify(classNum));
+      window.location.href = 'quiz.html';
     }
   </script>
 </body>

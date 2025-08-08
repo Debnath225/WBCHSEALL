@@ -1,5 +1,4 @@
 
-<script>
 /*
   Quiz app that loads physics.json and runs a multiple-choice quiz.
   Expected JSON shape (robustly supported):
@@ -405,5 +404,3 @@ async function loadJSON(force=false){
 
 // initial load
 loadJSON();
-
-</script>

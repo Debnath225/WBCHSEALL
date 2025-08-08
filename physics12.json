@@ -1,0 +1,183 @@
+{
+  "board": "WBCHSE Class 12 Physics",
+  "chapters": [
+    {
+      "chapter": "Electrostatics",
+      "formulas": [
+        {
+          "name": "Coulomb's Law",
+          "formula": "F = k * (q1 * q2) / r²",
+          "terms": {
+            "F": "Force between two charges (N)",
+            "k": "Coulomb constant (9 × 10⁹ Nm²/C²)",
+            "q1, q2": "Magnitude of charges (Coulombs)",
+            "r": "Distance between charges (meters)"
+          },
+          "description": "Force between two point charges is proportional to the product of their charges and inversely proportional to the square of the distance between them."
+        },
+        {
+          "name": "Electric Field due to Point Charge",
+          "formula": "E = k * q / r²",
+          "terms": {
+            "E": "Electric field intensity (N/C)",
+            "k": "Coulomb constant",
+            "q": "Charge (Coulombs)",
+            "r": "Distance from the charge (meters)"
+          },
+          "description": "Electric field produced at a point due to a point charge."
+        },
+        {
+          "name": "Electric Potential",
+          "formula": "V = k * q / r",
+          "terms": {
+            "V": "Electric potential (Volts)",
+            "k": "Coulomb constant",
+            "q": "Charge",
+            "r": "Distance from charge"
+          },
+          "description": "Electric potential at a point due to a point charge."
+        }
+      ]
+    },
+    {
+      "chapter": "Current Electricity",
+      "formulas": [
+        {
+          "name": "Ohm's Law",
+          "formula": "V = IR",
+          "terms": {
+            "V": "Voltage (Volts)",
+            "I": "Current (Amperes)",
+            "R": "Resistance (Ohms)"
+          },
+          "description": "Voltage across a resistor is proportional to the current through it."
+        },
+        {
+          "name": "Resistance in Series",
+          "formula": "R_total = R1 + R2 + ... + Rn",
+          "terms": {
+            "R_total": "Total resistance",
+            "R1, R2,...Rn": "Individual resistances"
+          },
+          "description": "Sum of resistances connected in series."
+        },
+        {
+          "name": "Resistance in Parallel",
+          "formula": "1/R_total = 1/R1 + 1/R2 + ... + 1/Rn",
+          "terms": {
+            "R_total": "Total resistance",
+            "R1, R2,...Rn": "Individual resistances"
+          },
+          "description": "Reciprocal of total resistance is sum of reciprocals of individual resistances in parallel."
+        },
+        {
+          "name": "Power",
+          "formula": "P = VI = I²R = V² / R",
+          "terms": {
+            "P": "Power (Watts)",
+            "V": "Voltage (Volts)",
+            "I": "Current (Amperes)",
+            "R": "Resistance (Ohms)"
+          },
+          "description": "Power dissipated in an electrical circuit."
+        }
+      ]
+    },
+    {
+      "chapter": "Magnetic Effects of Current and Magnetism",
+      "formulas": [
+        {
+          "name": "Magnetic Field due to Current in a Long Straight Wire",
+          "formula": "B = (μ₀ I) / (2π r)",
+          "terms": {
+            "B": "Magnetic field (Tesla)",
+            "μ₀": "Permeability of free space (4π × 10⁻⁷ T·m/A)",
+            "I": "Current (Amperes)",
+            "r": "Distance from wire (meters)"
+          },
+          "description": "Magnetic field at a distance r from a long straight conductor carrying current I."
+        },
+        {
+          "name": "Force on a Moving Charge in a Magnetic Field",
+          "formula": "F = q v B sinθ",
+          "terms": {
+            "F": "Force (Newtons)",
+            "q": "Charge (Coulombs)",
+            "v": "Velocity of charge (m/s)",
+            "B": "Magnetic field (Tesla)",
+            "θ": "Angle between velocity and magnetic field"
+          },
+          "description": "Force experienced by a charged particle moving in magnetic field."
+        }
+      ]
+    },
+    {
+      "chapter": "Optics",
+      "formulas": [
+        {
+          "name": "Lens Maker's Formula",
+          "formula": "(1/f) = (n - 1) * (1/R1 - 1/R2)",
+          "terms": {
+            "f": "Focal length of lens",
+            "n": "Refractive index of lens material",
+            "R1": "Radius of curvature of first surface",
+            "R2": "Radius of curvature of second surface"
+          },
+          "description": "Relates focal length with radii of curvature and refractive index."
+        },
+        {
+          "name": "Mirror Formula",
+          "formula": "(1/f) = (1/v) + (1/u)",
+          "terms": {
+            "f": "Focal length",
+            "v": "Image distance",
+            "u": "Object distance"
+          },
+          "description": "Relation between object distance, image distance, and focal length for spherical mirrors."
+        },
+        {
+          "name": "Magnification",
+          "formula": "m = v / u",
+          "terms": {
+            "m": "Magnification",
+            "v": "Image distance",
+            "u": "Object distance"
+          },
+          "description": "Ratio of image height to object height."
+        }
+      ]
+    },
+    {
+      "chapter": "Modern Physics",
+      "formulas": [
+        {
+          "name": "Energy of Photon",
+          "formula": "E = hν",
+          "terms": {
+            "E": "Energy (Joules)",
+            "h": "Planck’s constant (6.626 × 10⁻³⁴ Js)",
+            "ν": "Frequency of light (Hz)"
+          },
+          "description": "Energy carried by a photon of frequency ν."
+        },
+        {
+          "name": "Photoelectric Equation",
+          "formula": "K.E._max = hν - Φ",
+          "terms": {
+            "K.E._max": "Maximum kinetic energy of emitted electrons",
+            "h": "Planck's constant",
+            "ν": "Frequency of incident light",
+            "Φ": "Work function of material"
+          },
+          "description": "Energy balance in photoelectric effect."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "WBCHSE Syllabus and official documents",
+    "Sykophysics - Class 12 Physics Formula Sheet",
+    "JagranJosh - Class 12 Physics Formula PDF",
+    "SelfStudys - Physics Formula Class 12"
+  ]
+}

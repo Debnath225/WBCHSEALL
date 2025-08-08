@@ -63,6 +63,10 @@ body{
     font-size:18px;
     margin:6px 0 18px}
   .options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  #btnHint{
+    background:var(--glass);border:1px solid #e6e9f6;color:var(--muted);padding:8px 12px;border-radius:10px;
+    font-weight:600;cursor:pointer;transition:all .18s;display:flex;align-items:center;gap:8px;
+  }
   @media (max-width:540px){ .options{grid-template-columns:1fr} }
 
   .opt{

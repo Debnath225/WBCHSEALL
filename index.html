@@ -1,86 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>WBCHSE Physics — Formula Quiz</title>
-<link rel=stylesheet href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz Test Interface</title>
+<link rel="stylesheet" href="interface.css">
 </head>
 <body>
-<div class="wrap">
-  <div class="card">
-    <header>
-      <div class="title">
-        <div class="logo">PHY</div>
-        <div>
-          <h1 id="heading1">WBCHSE <b id="std"></b> — Formula Quiz</h1>
-          <div class="meta">Multiple-choice quiz using your <code>physics.json</code> (term explanations included)</div>
-        </div>
+  <div class="container">
+    <h1>Class 5-12 Quiz Test Selection</h1>
+    <div class="card-grid">
+      <div class="quiz-card" onclick="startQuiz(5)">
+        <div class="quiz-title">Class 5 Quiz</div>
+        <div class="quiz-details">Fun and engaging questions for young learners. Subjects: Math, Science, English.</div>
+        <div class="quiz-meta">10 Questions • 15 Minutes • Difficulty: Easy</div>
+        <button class="start-btn">Start Quiz</button>
       </div>
-      <div class="meta" id="metaRight">Loading data…</div>
-    </header>
-
-    <div class="body">
-      <!-- left: quiz -->
-      <section class="quiz">
-        <div class="chapter" id="chapterName">—</div>
-        <div class="qtext" id="questionText">Loading question...</div>
-        <div class="options" id="optionsWrap"></div>
-        <div class="small" id="questionHint"></div>
-      </section>
-
-      <!-- right: info / controls -->
-      <aside class="info">
-        <div class="progress"><i id="progBar"></i></div>
-        <div style="display:flex;justify-content:space-between;align-items:center">
-          <div>
-            <div style="font-size:13px;color:var(--muted)">Question</div>
-            <div style="font-weight:700" id="qIndex">0 / 0</div>
-          </div>
-          <div>
-            <div style="font-size:13px;color:var(--muted)">Score</div>
-            <div style="font-weight:700" id="score">0</div>
-          </div>
-        </div>
-
-        <div class="scoreBox" style="margin-top:18px">
-          <div class="scoreBig" id="scorePercent">—</div>
-          <div class="small" id="scoreText">Finish the quiz to see results</div>
-        </div>
-
-        <div class="controls">
-          <button class="btn" id="btnRestart">Restart</button>
-          <button class="ghost" id="btnLoad">Reload JSON</button>
-          <button class="ghost" id="btnMore">Questions: <span id="numQ">auto</span></button>
-        </div>
-
-        <div class="term-list" id="termList">
-          Tip: Questions come in two types — (1) identify formula expression and (2) identify term meaning.
-        </div>
-      </aside>
+      <div class="quiz-card" onclick="startQuiz(6)">
+        <div class="quiz-title">Class 6 Quiz</div>
+        <div class="quiz-details">Test your knowledge in Math, Science, and Social Studies.</div>
+        <div class="quiz-meta">12 Questions • 18 Minutes • Difficulty: Easy-Medium</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <div class="quiz-card" onclick="startQuiz(7)">
+        <div class="quiz-title">Class 7 Quiz</div>
+        <div class="quiz-details">Challenging quizzes to boost your skills. Subjects: Math, Science, English.</div>
+        <div class="quiz-meta">15 Questions • 20 Minutes • Difficulty: Medium</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <div class="quiz-card" onclick="startQuiz(8)">
+        <div class="quiz-title">Class 8 Quiz</div>
+        <div class="quiz-details">Sharpen your concepts in Math, Science, and Social Science.</div>
+        <div class="quiz-meta">15 Questions • 20 Minutes • Difficulty: Medium</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <div class="quiz-card" onclick="startQuiz(9)">
+        <div class="quiz-title">Class 9 Quiz</div>
+        <div class="quiz-details">Prepare for higher classes with advanced quizzes. Subjects: Math, Science, English.</div>
+        <div class="quiz-meta">20 Questions • 25 Minutes • Difficulty: Medium-Hard</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <div class="quiz-card" onclick="startQuiz(10)">
+        <div class="quiz-title">Class 10 Quiz</div>
+        <div class="quiz-details">Board exam level questions for practice. Subjects: Math, Science, Social Science.</div>
+        <div class="quiz-meta">25 Questions • 30 Minutes • Difficulty: Hard</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+       <div class="quiz-card" onclick="startQuiz(11)">
+        <div class="quiz-title">Class 11 Quiz</div>
+        <div class="quiz-details">Test your preparation for final exams. Subjects: Physics, Chemistry, Math/Biology.</div>
+        <div class="quiz-meta">30 Questions • 40 Minutes • Difficulty: Advanced</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <div class="quiz-card" onclick="startQuiz(12)">
+        <div class="quiz-title">Class 12 Quiz</div>
+        <div class="quiz-details">Test your preparation for final exams. Subjects: Physics, Chemistry, Math/Biology.</div>
+        <div class="quiz-meta">30 Questions • 40 Minutes • Difficulty: Advanced</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
     </div>
   </div>
-</div>
-
-<!-- excellent badge -->
-<div class="excellent" id="excellentBadge">EXCELLENT</div>
-
-<!-- confetti canvas -->
-<canvas id="confettiCanvas"></canvas>
-
-<!-- Final modal (hidden until end) -->
-<div id="finalModal" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:4000">
-  <div class="final">
-    <div class="big" id="finalScoreBig">0 / 0</div>
-    <p id="finalPercent">0%</p>
-    <div id="finalMsg" style="font-weight:600;color:var(--muted)"></div>
-    <div class="export">
-      <button class="btn" id="exportJSON">Download Results (JSON)</button>
-      <button class="ghost" id="exportCSV">Download CSV</button>
-      <button class="ghost" id="closeFinal">Close</button>
-    </div>
-  </div>
-</div>
-<script src="script.js"></script>
+  <script>
+    function startQuiz(classNum) {
+        // Redirect to the quiz page for the selected class
+        // Get the class number from the URL query parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  const classNum = urlParams.get('class');
+  console.log(classNum); // 
+        window.location.href = `index.html?class=${classNum}`;
+    }
+  </script>
 </body>
-</html>

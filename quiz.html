@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>WBCHSE Physics — Formula Quiz</title>
+<link rel=stylesheet href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <header>
+      <div class="title">
+        <div class="logo">PHY</div>
+        <div>
+          <h1 id="heading1">WBCHSE <b id="std"></b> — Formula Quiz</h1>
+          <div class="meta">Multiple-choice quiz using your <code>physics.json</code> (term explanations included)</div>
+        </div>
+      </div>
+      <div class="meta" id="metaRight">Loading data…</div>
+    </header>
+
+    <div class="body">
+      <!-- left: quiz -->
+      <section class="quiz">
+        <div class="chapter" id="chapterName">—</div>
+        <div class="qtext" id="questionText">Loading question...</div>
+        <div class="options" id="optionsWrap"></div>
+        <div class="small" id="questionHint"></div>
+      </section>
+
+      <!-- right: info / controls -->
+      <aside class="info">
+        <div class="progress"><i id="progBar"></i></div>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-size:13px;color:var(--muted)">Question</div>
+            <div style="font-weight:700" id="qIndex">0 / 0</div>
+          </div>
+          <div>
+            <div style="font-size:13px;color:var(--muted)">Score</div>
+            <div style="font-weight:700" id="score">0</div>
+          </div>
+        </div>
+
+        <div class="scoreBox" style="margin-top:18px">
+          <div class="scoreBig" id="scorePercent">—</div>
+          <div class="small" id="scoreText">Finish the quiz to see results</div>
+        </div>
+
+        <div class="controls">
+          <button class="btn" id="btnRestart">Restart</button>
+          <button class="ghost" id="btnLoad">Reload JSON</button>
+          <button class="ghost" id="btnMore">Questions: <span id="numQ">auto</span></button>
+        </div>
+
+        <div class="term-list" id="termList">
+          Tip: Questions come in two types — (1) identify formula expression and (2) identify term meaning.
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<!-- excellent badge -->
+<div class="excellent" id="excellentBadge">EXCELLENT</div>
+
+<!-- confetti canvas -->
+<canvas id="confettiCanvas"></canvas>
+
+<!-- Final modal (hidden until end) -->
+<div id="finalModal" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:4000">
+  <div class="final">
+    <div class="big" id="finalScoreBig">0 / 0</div>
+    <p id="finalPercent">0%</p>
+    <div id="finalMsg" style="font-weight:600;color:var(--muted)"></div>
+    <div class="export">
+      <button class="btn" id="exportJSON">Download Results (JSON)</button>
+      <button class="ghost" id="exportCSV">Download CSV</button>
+      <button class="ghost" id="closeFinal">Close</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

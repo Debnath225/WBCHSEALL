@@ -40,6 +40,9 @@
 body{
  padding:0px;
 }
+ .card{
+ padding: 8px;
+}
 }
   /* left: quiz panel */
   .quiz{

@@ -1,6 +1,7 @@
 {
   "board": "WBCHSE (Class 11 Physics - major topics)",
   "notes": "Each formula object includes: 'name' (what it is), 'formula' (mathematical form), 'terms' (each symbol explained with units), and 'description' (short explanation of the relation).",
+   "standerd":"class-11",
   "chapters": [
     {
       "chapter": "Physical World & Measurement",

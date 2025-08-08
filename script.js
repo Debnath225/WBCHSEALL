@@ -1,27 +1,4 @@
 
-/*
-  Quiz app that loads physics.json and runs a multiple-choice quiz.
-  Expected JSON shape (robustly supported):
-  {
-    "board": "...",
-    "chapters": [
-      {
-        "chapter": "Kinematics",
-        "formulas": [
-          {
-            "name": "Final velocity",
-            "formula": "v = u + a t",
-            "terms": { "v":"final velocity (m/s)", "u":"initial velocity (m/s)", ... },
-            "description": "..."
-          },
-          ...
-        ]
-      },
-      ...
-    ]
-  }
-*/
-
 // Config
 const QUESTION_COUNT = 20;         // default # questions (if available)
 const AUTO_ADVANCE_MS = 1400;      // ms to wait before auto advance on answer
@@ -52,6 +29,7 @@ const finalModal = document.getElementById('finalModal');
 const finalScoreBig = document.getElementById('finalScoreBig');
 const finalPercent = document.getElementById('finalPercent');
 const finalMsg = document.getElementById('finalMsg');
+const std = document.getElementById("std");
 
 // Buttons
 document.getElementById('btnRestart').addEventListener('click', restartQuiz);
@@ -388,6 +366,7 @@ async function loadJSON(force=false){
     if(!res.ok) throw new Error('Failed to load physics.json — make sure it is served from same folder and accessible.');
     dataJSON = await res.json();
     metaRight.textContent = `Loaded: ${dataJSON.chapters ? dataJSON.chapters.length : '0'} chapters`;
+    std.textContent =`${dataJSON.standerd}`;
     // create pool & start
     questionPool = buildQuestionPool(dataJSON);
     numQEl.textContent = Math.min(QUESTION_COUNT, questionPool.length);

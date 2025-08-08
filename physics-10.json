@@ -1,0 +1,152 @@
+{
+  "board": "WBCHSE Class 10 Physics",
+   "standerd":"class-10",
+  "chapters": [
+    {
+      "chapter": "Light – Reflection and Refraction",
+      "formulas": [
+        {
+          "name": "Law of Reflection",
+          "formula": "Angle of Incidence (i) = Angle of Reflection (r)",
+          "terms": {
+            "i": "Angle between incident ray and normal",
+            "r": "Angle between reflected ray and normal"
+          },
+          "description": "The angle at which light hits a surface equals the angle at which it reflects."
+        },
+        {
+          "name": "Lens Formula",
+          "formula": "(1/f) = (1/v) - (1/u)",
+          "terms": {
+            "f": "Focal length of lens",
+            "v": "Image distance",
+            "u": "Object distance"
+          },
+          "description": "Relation between focal length, object distance, and image distance for lenses."
+        },
+        {
+          "name": "Magnification",
+          "formula": "m = v / u",
+          "terms": {
+            "m": "Magnification",
+            "v": "Image distance",
+            "u": "Object distance"
+          },
+          "description": "Ratio of image size to object size."
+        }
+      ]
+    },
+    {
+      "chapter": "Electricity",
+      "formulas": [
+        {
+          "name": "Ohm's Law",
+          "formula": "V = IR",
+          "terms": {
+            "V": "Voltage (Volts)",
+            "I": "Current (Amperes)",
+            "R": "Resistance (Ohms)"
+          },
+          "description": "Voltage across a conductor is proportional to the current through it."
+        },
+        {
+          "name": "Resistance in Series",
+          "formula": "R_total = R1 + R2 + ... + Rn",
+          "terms": {
+            "R_total": "Total resistance",
+            "R1, R2,...Rn": "Individual resistances"
+          },
+          "description": "Sum of resistances connected in series."
+        },
+        {
+          "name": "Resistance in Parallel",
+          "formula": "1/R_total = 1/R1 + 1/R2 + ... + 1/Rn",
+          "terms": {
+            "R_total": "Total resistance",
+            "R1, R2,...Rn": "Individual resistances"
+          },
+          "description": "Reciprocal of total resistance equals sum of reciprocals of individual resistances in parallel."
+        },
+        {
+          "name": "Power",
+          "formula": "P = VI = I²R = V² / R",
+          "terms": {
+            "P": "Power (Watts)",
+            "V": "Voltage (Volts)",
+            "I": "Current (Amperes)",
+            "R": "Resistance (Ohms)"
+          },
+          "description": "Power dissipated in an electrical circuit."
+        }
+      ]
+    },
+    {
+      "chapter": "Sources of Energy",
+      "formulas": [
+        {
+          "name": "Energy",
+          "formula": "E = P × t",
+          "terms": {
+            "E": "Energy consumed (Joules)",
+            "P": "Power (Watts)",
+            "t": "Time (seconds)"
+          },
+          "description": "Energy consumed by an electrical device is the product of power and time."
+        }
+      ]
+    },
+    {
+      "chapter": "Work, Power and Energy",
+      "formulas": [
+        {
+          "name": "Work Done",
+          "formula": "W = F × d × cosθ",
+          "terms": {
+            "W": "Work done (Joules)",
+            "F": "Force applied (Newtons)",
+            "d": "Displacement (meters)",
+            "θ": "Angle between force and displacement"
+          },
+          "description": "Work done when a force moves an object through a displacement."
+        },
+        {
+          "name": "Power",
+          "formula": "P = W / t",
+          "terms": {
+            "P": "Power (Watts)",
+            "W": "Work done",
+            "t": "Time (seconds)"
+          },
+          "description": "Power is the rate of doing work."
+        },
+        {
+          "name": "Kinetic Energy",
+          "formula": "KE = ½ m v²",
+          "terms": {
+            "KE": "Kinetic energy (Joules)",
+            "m": "Mass (kg)",
+            "v": "Velocity (m/s)"
+          },
+          "description": "Energy possessed by a body due to motion."
+        },
+        {
+          "name": "Potential Energy",
+          "formula": "PE = m g h",
+          "terms": {
+            "PE": "Potential energy (Joules)",
+            "m": "Mass (kg)",
+            "g": "Acceleration due to gravity (9.8 m/s²)",
+            "h": "Height (meters)"
+          },
+          "description": "Energy possessed by a body due to position."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "WBCHSE Syllabus and Official Documents",
+    "JagranJosh Class 10 Physics Formula Sheet",
+    "Byju's Class 10 Physics Formulas",
+    "PhysicsWallah and other trusted educational sites"
+  ]
+}

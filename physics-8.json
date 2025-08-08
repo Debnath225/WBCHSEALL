@@ -1,0 +1,153 @@
+{
+
+ "standerd":"class-8",
+  "board": "WBCHSE Class 8 Physics",
+  "chapters": [
+    {
+      "chapter": "Force and Pressure",
+      "formulas": [
+        {
+          "name": "Force",
+          "formula": "F = m × a",
+          "terms": {
+            "F": "Force (Newtons)",
+            "m": "Mass (kg)",
+            "a": "Acceleration (m/s²)"
+          },
+          "description": "Force is mass times acceleration."
+        },
+        {
+          "name": "Pressure",
+          "formula": "P = F / A",
+          "terms": {
+            "P": "Pressure (Pascals, Pa)",
+            "F": "Force applied (Newtons)",
+            "A": "Area over which force is applied (m²)"
+          },
+          "description": "Pressure is force per unit area."
+        },
+        {
+          "name": "Atmospheric Pressure",
+          "formula": "P = h ρ g",
+          "terms": {
+            "P": "Pressure due to liquid column",
+            "h": "Height of liquid column (meters)",
+            "ρ": "Density of liquid (kg/m³)",
+            "g": "Acceleration due to gravity (9.8 m/s²)"
+          },
+          "description": "Pressure exerted by a liquid column."
+        }
+      ]
+    },
+    {
+      "chapter": "Friction",
+      "formulas": [
+        {
+          "name": "Frictional Force",
+          "formula": "F_friction = μ × N",
+          "terms": {
+            "F_friction": "Frictional force (Newtons)",
+            "μ": "Coefficient of friction (unitless)",
+            "N": "Normal reaction force (Newtons)"
+          },
+          "description": "Frictional force depends on coefficient of friction and normal force."
+        }
+      ]
+    },
+    {
+      "chapter": "Sound",
+      "formulas": [
+        {
+          "name": "Speed of Sound",
+          "formula": "v = d / t",
+          "terms": {
+            "v": "Speed of sound (m/s)",
+            "d": "Distance travelled (meters)",
+            "t": "Time taken (seconds)"
+          },
+          "description": "Speed is distance divided by time."
+        },
+        {
+          "name": "Frequency, Wavelength and Speed Relation",
+          "formula": "v = f × λ",
+          "terms": {
+            "v": "Speed of sound (m/s)",
+            "f": "Frequency (Hz)",
+            "λ": "Wavelength (meters)"
+          },
+          "description": "Relation between speed, frequency, and wavelength of sound."
+        }
+      ]
+    },
+    {
+      "chapter": "Light",
+      "formulas": [
+        {
+          "name": "Law of Reflection",
+          "formula": "Angle of Incidence = Angle of Reflection",
+          "terms": {
+            "Angle of Incidence": "Angle between incident ray and normal",
+            "Angle of Reflection": "Angle between reflected ray and normal"
+          },
+          "description": "Light reflects such that angle of incidence equals angle of reflection."
+        }
+      ]
+    },
+    {
+      "chapter": "Electricity",
+      "formulas": [
+        {
+          "name": "Electric Current",
+          "formula": "I = Q / t",
+          "terms": {
+            "I": "Current (Amperes)",
+            "Q": "Charge (Coulombs)",
+            "t": "Time (seconds)"
+          },
+          "description": "Current is charge flow per unit time."
+        },
+        {
+          "name": "Ohm's Law",
+          "formula": "V = I × R",
+          "terms": {
+            "V": "Voltage (Volts)",
+            "I": "Current (Amperes)",
+            "R": "Resistance (Ohms)"
+          },
+          "description": "Voltage across a resistor is proportional to current through it."
+        }
+      ]
+    },
+    {
+      "chapter": "Work and Energy",
+      "formulas": [
+        {
+          "name": "Work Done",
+          "formula": "W = F × d",
+          "terms": {
+            "W": "Work done (Joules)",
+            "F": "Force applied (Newtons)",
+            "d": "Displacement in direction of force (meters)"
+          },
+          "description": "Work is force applied times displacement in the force's direction."
+        },
+        {
+          "name": "Kinetic Energy",
+          "formula": "KE = ½ m v²",
+          "terms": {
+            "KE": "Kinetic energy (Joules)",
+            "m": "Mass (kg)",
+            "v": "Velocity (m/s)"
+          },
+          "description": "Energy possessed by a body due to motion."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "WBCHSE Official Syllabus and Textbooks",
+    "NCERT Class 8 Science",
+    "Byju's Class 8 Physics",
+    "Other Trusted Educational Resources"
+  ]
+}

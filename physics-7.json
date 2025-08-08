@@ -1,0 +1,155 @@
+{
+  "board": "WBCHSE Class 7 Physics",
+   "standerd":"class-7",
+  "chapters": [
+    {
+      "chapter": "Motion and Measurement of Distances",
+      "formulas": [
+        {
+          "name": "Speed",
+          "formula": "Speed = Distance / Time",
+          "terms": {
+            "Speed": "Rate of motion (m/s)",
+            "Distance": "Length travelled (meters)",
+            "Time": "Time taken (seconds)"
+          },
+          "description": "Speed tells how fast an object moves."
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "What is the formula for speed?",
+          "options": [
+            "Speed = Time / Distance",
+            "Speed = Distance × Time",
+            "Speed = Distance / Time",
+            "Speed = Distance + Time"
+          ],
+          "answer": "Speed = Distance / Time"
+        },
+        {
+          "question": "If a car travels 150 km in 3 hours, what is its speed?",
+          "options": [
+            "50 km/h",
+            "45 km/h",
+            "55 km/h",
+            "60 km/h"
+          ],
+          "answer": "50 km/h"
+        }
+      ]
+    },
+    {
+      "chapter": "Light, Shadows and Reflections",
+      "formulas": [
+        {
+          "name": "Law of Reflection",
+          "formula": "Angle of Incidence = Angle of Reflection",
+          "terms": {
+            "Angle of Incidence": "Angle between incident ray and normal",
+            "Angle of Reflection": "Angle between reflected ray and normal"
+          },
+          "description": "Light reflects so that incidence and reflection angles are equal."
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "According to the law of reflection, the angle of incidence is equal to?",
+          "options": [
+            "Angle of refraction",
+            "Angle of reflection",
+            "Angle of deviation",
+            "Angle of emergence"
+          ],
+          "answer": "Angle of reflection"
+        },
+        {
+          "question": "What kind of shadow is formed when the light source is very small?",
+          "options": [
+            "Umbra",
+            "Penumbra",
+            "Diffuse shadow",
+            "No shadow"
+          ],
+          "answer": "Umbra"
+        }
+      ]
+    },
+    {
+      "chapter": "Electricity and Circuits",
+      "formulas": [
+        {
+          "name": "Electric Current",
+          "formula": "I = Q / t",
+          "terms": {
+            "I": "Electric current (Amperes)",
+            "Q": "Charge (Coulombs)",
+            "t": "Time (seconds)"
+          },
+          "description": "Current is the flow of electric charge per second."
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "What is the unit of electric current?",
+          "options": [
+            "Volt",
+            "Ohm",
+            "Ampere",
+            "Watt"
+          ],
+          "answer": "Ampere"
+        },
+        {
+          "question": "Electric current is the flow of?",
+          "options": [
+            "Electrons",
+            "Protons",
+            "Neutrons",
+            "Neutrinos"
+          ],
+          "answer": "Electrons"
+        }
+      ]
+    },
+    {
+      "chapter": "Fun with Magnets",
+      "formulas": [
+        {
+          "name": "Magnetic Force",
+          "formula": "F = q v B sinθ",
+          "terms": {
+            "F": "Magnetic force (Newtons)",
+            "q": "Charge (Coulombs)",
+            "v": "Velocity (m/s)",
+            "B": "Magnetic field strength (Tesla)",
+            "θ": "Angle between velocity and magnetic field"
+          },
+          "description": "Force acting on a moving charge in a magnetic field."
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "Which part of a magnet always points north?",
+          "options": [
+            "South Pole",
+            "North Pole",
+            "Magnetic Equator",
+            "Magnetic Center"
+          ],
+          "answer": "North Pole"
+        },
+        {
+          "question": "Magnets attract which types of materials?",
+          "options": [
+            "Wood and plastic",
+            "Iron and steel",
+            "Glass and rubber",
+            "Copper and aluminum"
+          ],
+          "answer": "Iron and steel"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "board": "WBCHSE Class 5 Science",
+   "standerd":"class-5",
+  "chapters": [
+    {
+      "chapter": "Measurement",
+      "formulas": [
+        {
+          "name": "Length Conversion",
+          "formula": "1 meter = 100 centimeters",
+          "terms": {
+            "meter": "Basic unit of length",
+            "centimeter": "1/100th of a meter"
+          },
+          "description": "Conversion between meters and centimeters."
+        },
+        {
+          "name": "Mass Conversion",
+          "formula": "1 kilogram = 1000 grams",
+          "terms": {
+            "kilogram": "Basic unit of mass",
+            "gram": "1/1000th of a kilogram"
+          },
+          "description": "Conversion between kilograms and grams."
+        },
+        {
+          "name": "Volume of a Cube",
+          "formula": "V = a³",
+          "terms": {
+            "V": "Volume",
+            "a": "Length of one side"
+          },
+          "description": "Volume of a cube is the cube of its side length."
+        }
+      ]
+    },
+    {
+      "chapter": "Force and Motion",
+      "formulas": [
+        {
+          "name": "Speed",
+          "formula": "Speed = Distance / Time",
+          "terms": {
+            "Speed": "How fast something moves",
+            "Distance": "Length traveled",
+            "Time": "Time taken"
+          },
+          "description": "Speed is distance divided by time."
+        }
+      ]
+    },
+    {
+      "chapter": "Light and Shadows",
+      "formulas": [
+        {
+          "name": "Law of Reflection",
+          "formula": "Angle of Incidence = Angle of Reflection",
+          "terms": {
+            "Angle of Incidence": "Angle at which light hits a surface",
+            "Angle of Reflection": "Angle at which light reflects"
+          },
+          "description": "Light reflects at equal angles to the incident ray."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "board": "WBCHSE Class 6 Science",
+   "standerd":"class-6",
+  "chapters": [
+    {
+      "chapter": "Measurement",
+      "formulas": [
+        {
+          "name": "Length Conversion",
+          "formula": "1 meter = 100 centimeters",
+          "terms": {
+            "meter": "Basic unit of length",
+            "centimeter": "1/100th of a meter"
+          },
+          "description": "Conversion between meters and centimeters."
+        },
+        {
+          "name": "Time Conversion",
+          "formula": "1 hour = 60 minutes = 3600 seconds",
+          "terms": {
+            "hour": "Unit of time",
+            "minute": "1/60th of an hour",
+            "second": "Basic unit of time"
+          },
+          "description": "Converting time units."
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "How many centimeters are there in 2 meters?",
+          "options": ["20", "200", "2", "0.2"],
+          "answer": "200"
+        },
+        {
+          "question": "How many seconds are there in 1 hour?",
+          "options": ["60", "360", "3600", "6000"],
+          "answer": "3600"
+        }
+      ]
+    },
+    {
+      "chapter": "Force and Motion",
+      "formulas": [
+        {
+          "name": "Speed",
+          "formula": "Speed = Distance / Time",
+          "terms": {
+            "Speed": "How fast something moves",
+            "Distance": "Length covered",
+            "Time": "Duration taken"
+          },
+          "description": "Speed is distance traveled per unit time."
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "What is the formula for speed?",
+          "options": ["Speed = Time / Distance", "Speed = Distance / Time", "Speed = Distance × Time", "Speed = Time × Distance"],
+          "answer": "Speed = Distance / Time"
+        },
+        {
+          "question": "If a person travels 100 meters in 20 seconds, what is the speed?",
+          "options": ["5 m/s", "0.2 m/s", "20 m/s", "2 m/s"],
+          "answer": "5 m/s"
+        }
+      ]
+    },
+    {
+      "chapter": "Light and Shadows",
+      "formulas": [
+        {
+          "name": "Law of Reflection",
+          "formula": "Angle of Incidence = Angle of Reflection",
+          "terms": {
+            "Angle of Incidence": "Angle made by incoming ray",
+            "Angle of Reflection": "Angle made by reflected ray"
+          },
+          "description": "Light reflects at equal angles to incidence."
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "According to the law of reflection, the angle of incidence is equal to?",
+          "options": ["Angle of Refraction", "Angle of Reflection", "Angle of Deviation", "Angle of Emergence"],
+          "answer": "Angle of Reflection"
+        },
+        {
+          "question": "What causes a shadow?",
+          "options": ["Reflection of light", "Absorption of light", "Blocking of light", "Diffusion of light"],
+          "answer": "Blocking of light"
+        }
+      ]
+    },
+    {
+      "chapter": "Electricity",
+      "formulas": [
+        {
+          "name": "Electric Current",
+          "formula": "Current (I) = Charge (Q) / Time (t)",
+          "terms": {
+            "Current (I)": "Flow of electric charge",
+            "Charge (Q)": "Quantity of electricity",
+            "Time (t)": "Duration"
+          },
+          "description": "Electric current is charge flow per unit time."
+        }
+      ],
+      "mcqs": [
+        {
+          "question": "What is the unit of electric current?",
+          "options": ["Volt", "Ohm", "Ampere", "Watt"],
+          "answer": "Ampere"
+        },
+        {
+          "question": "Electric current flows due to the movement of?",
+          "options": ["Protons", "Electrons", "Neutrons", "Photons"],
+          "answer": "Electrons"
+        }
+      ]
+    }
+  ]
+}

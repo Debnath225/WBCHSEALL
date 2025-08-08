@@ -1,0 +1,162 @@
+{
+  "board": "WBCHSE Class 9 Physics",
+   "standerd":"class-9",
+  "chapters": [
+    {
+      "chapter": "Motion",
+      "formulas": [
+        {
+          "name": "Speed",
+          "formula": "Speed = Distance / Time",
+          "terms": {
+            "Speed": "How fast an object is moving (m/s)",
+            "Distance": "Total path length covered (meters)",
+            "Time": "Time taken (seconds)"
+          },
+          "description": "Speed is the rate of change of distance with respect to time."
+        },
+        {
+          "name": "Velocity",
+          "formula": "Velocity = Displacement / Time",
+          "terms": {
+            "Velocity": "Rate of change of displacement (m/s)",
+            "Displacement": "Shortest distance from initial to final position (meters)",
+            "Time": "Time taken (seconds)"
+          },
+          "description": "Velocity includes direction and magnitude."
+        },
+        {
+          "name": "Acceleration",
+          "formula": "Acceleration = Change in Velocity / Time",
+          "terms": {
+            "Acceleration": "Rate of change of velocity (m/s²)",
+            "Change in Velocity": "Final velocity - Initial velocity",
+            "Time": "Time taken for the change (seconds)"
+          },
+          "description": "Acceleration is how quickly velocity changes."
+        },
+        {
+          "name": "Equations of Motion",
+          "formula": [
+            "v = u + at",
+            "s = ut + ½at²",
+            "v² = u² + 2as"
+          ],
+          "terms": {
+            "v": "Final velocity (m/s)",
+            "u": "Initial velocity (m/s)",
+            "a": "Acceleration (m/s²)",
+            "t": "Time (seconds)",
+            "s": "Displacement (meters)"
+          },
+          "description": "Basic equations describing motion under constant acceleration."
+        }
+      ]
+    },
+    {
+      "chapter": "Force and Laws of Motion",
+      "formulas": [
+        {
+          "name": "Force",
+          "formula": "F = m × a",
+          "terms": {
+            "F": "Force (Newtons)",
+            "m": "Mass (kg)",
+            "a": "Acceleration (m/s²)"
+          },
+          "description": "Force is mass times acceleration (Newton's second law)."
+        },
+        {
+          "name": "Momentum",
+          "formula": "p = m × v",
+          "terms": {
+            "p": "Momentum (kg·m/s)",
+            "m": "Mass (kg)",
+            "v": "Velocity (m/s)"
+          },
+          "description": "Momentum is mass times velocity."
+        }
+      ]
+    },
+    {
+      "chapter": "Gravitation",
+      "formulas": [
+        {
+          "name": "Newton's Law of Gravitation",
+          "formula": "F = G × (m1 × m2) / r²",
+          "terms": {
+            "F": "Gravitational force (Newtons)",
+            "G": "Gravitational constant (6.674 × 10⁻¹¹ Nm²/kg²)",
+            "m1, m2": "Masses of two objects (kg)",
+            "r": "Distance between centers of masses (meters)"
+          },
+          "description": "Force of attraction between two masses."
+        },
+        {
+          "name": "Acceleration due to Gravity",
+          "formula": "g = G × M / R²",
+          "terms": {
+            "g": "Acceleration due to gravity (9.8 m/s²)",
+            "G": "Gravitational constant",
+            "M": "Mass of Earth (kg)",
+            "R": "Radius of Earth (meters)"
+          },
+          "description": "Acceleration experienced by objects due to Earth's gravity."
+        },
+        {
+          "name": "Weight",
+          "formula": "W = m × g",
+          "terms": {
+            "W": "Weight (Newtons)",
+            "m": "Mass (kg)",
+            "g": "Acceleration due to gravity (m/s²)"
+          },
+          "description": "Weight is the force due to gravity acting on a mass."
+        }
+      ]
+    },
+    {
+      "chapter": "Work and Energy",
+      "formulas": [
+        {
+          "name": "Work Done",
+          "formula": "W = F × d × cosθ",
+          "terms": {
+            "W": "Work done (Joules)",
+            "F": "Force applied (Newtons)",
+            "d": "Displacement (meters)",
+            "θ": "Angle between force and displacement"
+          },
+          "description": "Work done when a force moves an object through a displacement."
+        },
+        {
+          "name": "Kinetic Energy",
+          "formula": "KE = ½ m v²",
+          "terms": {
+            "KE": "Kinetic energy (Joules)",
+            "m": "Mass (kg)",
+            "v": "Velocity (m/s)"
+          },
+          "description": "Energy possessed by a body due to motion."
+        },
+        {
+          "name": "Potential Energy",
+          "formula": "PE = m g h",
+          "terms": {
+            "PE": "Potential energy (Joules)",
+            "m": "Mass (kg)",
+            "g": "Acceleration due to gravity (9.8 m/s²)",
+            "h": "Height (meters)"
+          },
+          "description": "Energy possessed by a body due to position."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "WBCHSE Syllabus and Official Documents",
+    "NCERT Class 9 Physics",
+    "JagranJosh Class 9 Physics Formula Sheet",
+    "Other Trusted Educational Sites"
+  ]
+}

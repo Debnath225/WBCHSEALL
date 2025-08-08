@@ -366,7 +366,7 @@ async function loadJSON(force=false){
     if(!res.ok) throw new Error('Failed to load physics.json — make sure it is served from same folder and accessible.');
     dataJSON = await res.json();
     metaRight.textContent = `Loaded: ${dataJSON.chapters ? dataJSON.chapters.length : '0'} chapters`;
-    std.textContent =`${dataJSON.standerd}`;
+    std.textContent =`${dataJSON.standerd ? dataJSON.standerd : 'No standard found'}`;
     // create pool & start
     questionPool = buildQuestionPool(dataJSON);
     numQEl.textContent = Math.min(QUESTION_COUNT, questionPool.length);

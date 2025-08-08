@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /quiz.html
+User-agent: Googlebot
+Disallow: /*.gif$

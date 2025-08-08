@@ -144,21 +144,18 @@ function prepareQuestions(pool, desiredCount){
   });
   return pick;
 }
-function hintToggled(){
+
  let toggle =0;
   const btnHint = document.getElementById('btnHint');
   btnHint.addEventListener('click', () => {
-    toggle = toggle ? 0 : 1; // toggle between 0 and 1
     if(toggle) {
     document.getElementById('hintText').style.display = 'none';
-     return 0;
+     toggle = 0;
     } else {
     document.getElementById('hintText').style.display = 'block';
-     return 1;
-  
+      toggle = 1;
     }
   });
-}
 // Render current question
 function renderQuestion(){
   if(!shuffledQuestions.length) {
@@ -172,10 +169,10 @@ function renderQuestion(){
   if(q.type === 'identify_formula'){
     qtext = `Which of the following is the correct formula for: "${q.name}"?`;
 
-    (hintToggled() == 1)?(hintContent.textContent = q.description || "No hint available") : hintContent.textContent="";
+    hintContent.textContent = q.description || "No hint available";
   } else if(q.type === 'term_meaning'){
     qtext = `In the formula "${q.formula || ''}", what does "${q.term}" represent?`;
-    (hintToggled() == 1)?(hintContent.textContent = q.description || "No hint available") :hintContent.textContent="";
+     hintContent.textContent = q.description || "No hint available";
   } else {
     qtext = q.name || "Identify the correct option";
   }

@@ -384,7 +384,7 @@ function prepareQuestions(pool, desired){
 async function loadJSON(force=false){
   try{
     // load physics.json from same folder
-    const res = await fetch('physics.json', {cache: force ? 'reload' : 'default'});
+    const res = await fetch('physics12.json', {cache: force ? 'reload' : 'default'});
     if(!res.ok) throw new Error('Failed to load physics.json — make sure it is served from same folder and accessible.');
     dataJSON = await res.json();
     metaRight.textContent = `Loaded: ${dataJSON.chapters ? dataJSON.chapters.length : '0'} chapters`;

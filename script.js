@@ -1,4 +1,8 @@
 
+const getClass = localStorage.getItem('selectedClass');// get class from localStorage or redirect to index.html
+if(!getClass){
+  window.location.href = 'index.html'; // redirect if no class selected
+}
 // Config
 const QUESTION_COUNT = 30;         // default # questions (if available)
 const AUTO_ADVANCE_MS = 1400;      // ms to wait before auto advance on answer
@@ -378,7 +382,6 @@ async function loadJSON(force=false){
   try{
     // load physics.json from same folder
     let url;
-    const getClass = localStorage.getItem('selectedClass');
     switch(getClass){
       case '5': url = 'physics-5.json'; break;
       case '6': url = 'physics-6.json'; break;

@@ -17,12 +17,14 @@ Practice all of your syllabus — from Class 5 to Class 12!
 ## 🖥️ Getting Started
 
 1. **Clone the repository:**
+
    ```sh
    git clone https://github.com/yourusername/WBCHSEALL.git
    cd WBCHSEALL
    ```
 
 2. **Open in your browser:**
+
    ```sh
    $BROWSER index.html
    ```
@@ -59,4 +61,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-**Made with ❤️ for students
+\*\*Made with ❤️ for students

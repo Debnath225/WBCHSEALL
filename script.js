@@ -1,6 +1,6 @@
 
 // Config
-const QUESTION_COUNT = 20;         // default # questions (if available)
+const QUESTION_COUNT = 30;         // default # questions (if available)
 const AUTO_ADVANCE_MS = 1400;      // ms to wait before auto advance on answer
 const EXCELLENT_TIME = 1400;       // how long to show the "Excellent" badge
 

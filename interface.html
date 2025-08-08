@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quiz Test Interface</title>
-<link re="stylesheet" href="interface.css">
+<link rel="stylesheet" href="interface.css">
 </head>
 <body>
   <div class="container">
@@ -46,6 +46,12 @@
         <div class="quiz-meta">25 Questions • 30 Minutes • Difficulty: Hard</div>
         <button class="start-btn">Start Quiz</button>
       </div>
+       <div class="quiz-card" onclick="startQuiz(11)">
+        <div class="quiz-title">Class 11 Quiz</div>
+        <div class="quiz-details">Test your preparation for final exams. Subjects: Physics, Chemistry, Math/Biology.</div>
+        <div class="quiz-meta">30 Questions • 40 Minutes • Difficulty: Advanced</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
       <div class="quiz-card" onclick="startQuiz(12)">
         <div class="quiz-title">Class 12 Quiz</div>
         <div class="quiz-details">Test your preparation for final exams. Subjects: Physics, Chemistry, Math/Biology.</div>
@@ -56,8 +62,12 @@
   </div>
   <script>
     function startQuiz(classNum) {
-      alert('Starting Quiz for Class ' + classNum + '!');
-      // You can replace this with navigation or modal logic as needed.
+        // Redirect to the quiz page for the selected class
+        // Get the class number from the URL query parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  const classNum = urlParams.get('class');
+  console.log(classNum); // 
+        window.location.href = `index.html?class=${classNum}`;
     }
   </script>
 </body>

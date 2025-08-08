@@ -1,1 +1,535 @@
+{
+  "board": "WBCHSE (Class 11 Physics - major topics)",
+  "notes": "Each formula object includes: 'name' (what it is), 'formula' (mathematical form), 'terms' (each symbol explained with units), and 'description' (short explanation of the relation).",
+  "chapters": [
+    {
+      "chapter": "Physical World & Measurement",
+      "formulas": [
+        {
+          "name": "Dimensional formula of a quantity",
+          "formula": "M^a L^b T^c",
+          "terms": {
+            "M": "dimension of mass",
+            "L": "dimension of length",
+            "T": "dimension of time",
+            "a,b,c": "exponents specific to the quantity (integers or fractions)"
+          },
+          "description": "Expresses any physical quantity in base dimensions of mass (M), length (L), and time (T). Example: Force has dimensions M L T^-2."
+        },
+        {
+          "name": "Percent error / Percentage uncertainty",
+          "formula": "percent_error = (|measured - true| / true) × 100",
+          "terms": {
+            "measured": "measured value of the quantity",
+            "true": "accepted/true value",
+            "percent_error": "relative error expressed as percentage"
+          },
+          "description": "Gives relative deviation of measured value from true value as a percent."
+        },
+        {
+          "name": "Significant figures (rule summary)",
+          "formula": "— (rules, not a formula)",
+          "terms": {
+            "sig_figs": "number of meaningful digits in a measured value"
+          },
+          "description": "Rules determine how many digits are reliable in a measurement (e.g., leading zeros not significant, trailing zeros significant if decimal point present)."
+        }
+      ]
+    },
+    {
+      "chapter": "Kinematics (Rectilinear & Plane Motion)",
+      "formulas": [
+        {
+          "name": "Displacement - time relation (constant acceleration)",
+          "formula": "s = ut + (1/2) a t^2",
+          "terms": {
+            "s": "displacement (m)",
+            "u": "initial velocity (m/s)",
+            "a": "acceleration (m/s^2)",
+            "t": "time elapsed (s)"
+          },
+          "description": "Gives displacement after time t when acceleration a is constant and initial velocity is u."
+        },
+        {
+          "name": "Final velocity (constant acceleration)",
+          "formula": "v = u + a t",
+          "terms": {
+            "v": "final velocity (m/s)",
+            "u": "initial velocity (m/s)",
+            "a": "acceleration (m/s^2)",
+            "t": "time elapsed (s)"
+          },
+          "description": "Relates initial and final velocities under constant acceleration."
+        },
+        {
+          "name": "Velocity–displacement relation (no time)",
+          "formula": "v^2 = u^2 + 2 a s",
+          "terms": {
+            "v": "final velocity (m/s)",
+            "u": "initial velocity (m/s)",
+            "a": "acceleration (m/s^2)",
+            "s": "displacement (m)"
+          },
+          "description": "Links velocities and displacement without explicit time when acceleration is constant."
+        },
+        {
+          "name": "Average velocity (constant acceleration)",
+          "formula": "v_avg = (u + v) / 2",
+          "terms": {
+            "v_avg": "average velocity (m/s)",
+            "u": "initial velocity (m/s)",
+            "v": "final velocity (m/s)"
+          },
+          "description": "For constant acceleration, average velocity is arithmetic mean of initial and final velocities."
+        },
+        {
+          "name": "Projectile motion — horizontal & vertical components",
+          "formula": "u_x = u cosθ,  u_y = u sinθ,  t_total = (2 u sinθ) / g,  Range R = (u^2 sin 2θ)/g,  Max height H = (u^2 sin^2 θ)/(2g)",
+          "terms": {
+            "u": "initial speed of projectile (m/s)",
+            "θ": "launch angle measured from horizontal (radians or degrees)",
+            "u_x": "horizontal component of velocity (m/s)",
+            "u_y": "vertical component of velocity (m/s)",
+            "t_total": "total time of flight (s)",
+            "g": "acceleration due to gravity (~9.8 m/s^2)",
+            "R": "horizontal range (m)",
+            "H": "maximum height (m)"
+          },
+          "description": "Standard relations for projectile motion (neglects air resistance)."
+        },
+        {
+          "name": "Relative velocity (one-dimensional)",
+          "formula": "v_{A/B} = v_A - v_B",
+          "terms": {
+            "v_{A/B}": "velocity of A relative to B (m/s)",
+            "v_A": "velocity of A in the chosen frame (m/s)",
+            "v_B": "velocity of B in the chosen frame (m/s)"
+          },
+          "description": "Gives relative speed and direction of A as seen from B."
+        }
+      ]
+    },
+    {
+      "chapter": "Laws of Motion & Friction",
+      "formulas": [
+        {
+          "name": "Newton's Second Law (general)",
+          "formula": "F = m a",
+          "terms": {
+            "F": "net force vector on object (N = kg·m/s^2)",
+            "m": "mass of object (kg)",
+            "a": "acceleration vector (m/s^2)"
+          },
+          "description": "Net force on an object equals mass times acceleration; vector relation."
+        },
+        {
+          "name": "Momentum",
+          "formula": "p = m v",
+          "terms": {
+            "p": "linear momentum (kg·m/s)",
+            "m": "mass (kg)",
+            "v": "velocity (m/s)"
+          },
+          "description": "Momentum is product of mass and velocity; conserved in isolated system."
+        },
+        {
+          "name": "Impulse",
+          "formula": "J = Δp = F_avg Δt",
+          "terms": {
+            "J": "impulse (N·s)",
+            "Δp": "change in momentum (kg·m/s)",
+            "F_avg": "average force during collision (N)",
+            "Δt": "time duration (s)"
+          },
+          "description": "Impulse equals change in momentum; force acting for time Δt changes momentum."
+        },
+        {
+          "name": "Friction — limiting static friction and kinetic friction",
+          "formula": "f_s(max) = μ_s N,  f_k = μ_k N",
+          "terms": {
+            "f_s(max)": "maximum static friction force (N)",
+            "f_k": "kinetic (sliding) friction force (N)",
+            "μ_s": "coefficient of static friction (dimensionless)",
+            "μ_k": "coefficient of kinetic friction (dimensionless)",
+            "N": "normal reaction force (N)"
+          },
+          "description": "Static friction adjusts up to its maximum; kinetic friction acts during sliding (usually μ_k < μ_s)."
+        }
+      ]
+    },
+    {
+      "chapter": "Work, Energy & Power",
+      "formulas": [
+        {
+          "name": "Work done by constant force",
+          "formula": "W = F ⋅ s = F s cosφ",
+          "terms": {
+            "W": "work (J = N·m)",
+            "F": "applied force magnitude (N)",
+            "s": "displacement magnitude (m)",
+            "φ": "angle between force and displacement vectors (radians or degrees)"
+          },
+          "description": "Scalar product of force and displacement; positive when force has component along displacement."
+        },
+        {
+          "name": "Kinetic Energy",
+          "formula": "K = (1/2) m v^2",
+          "terms": {
+            "K": "kinetic energy (J)",
+            "m": "mass (kg)",
+            "v": "speed (m/s)"
+          },
+          "description": "Energy associated with motion of mass m at speed v."
+        },
+        {
+          "name": "Work–Energy theorem",
+          "formula": "W_net = ΔK = (1/2) m v_f^2 - (1/2) m v_i^2",
+          "terms": {
+            "W_net": "net work done by all forces on object (J)",
+            "ΔK": "change in kinetic energy (J)",
+            "v_i": "initial speed (m/s)",
+            "v_f": "final speed (m/s)"
+          },
+          "description": "Net work done equals change in kinetic energy."
+        },
+        {
+          "name": "Power (instantaneous)",
+          "formula": "P = dW/dt = F ⋅ v",
+          "terms": {
+            "P": "power (W = J/s)",
+            "dW/dt": "rate of doing work",
+            "F": "force (N)",
+            "v": "instantaneous velocity vector (m/s)"
+          },
+          "description": "Power is rate at which work is done; for force F on object with velocity v, P = F·v."
+        },
+        {
+          "name": "Potential energy (gravitational near Earth)",
+          "formula": "U = m g h",
+          "terms": {
+            "U": "gravitational potential energy (J)",
+            "m": "mass (kg)",
+            "g": "acceleration due to gravity (~9.8 m/s^2)",
+            "h": "height above chosen reference (m)"
+          },
+          "description": "Work required to lift mass m by height h in uniform gravitational field near Earth's surface."
+        }
+      ]
+    },
+    {
+      "chapter": "System of Particles & Rotational Motion",
+      "formulas": [
+        {
+          "name": "Center of mass (discrete)",
+          "formula": "R_cm = (Σ m_i r_i) / (Σ m_i)",
+          "terms": {
+            "R_cm": "position vector of center of mass (m)",
+            "m_i": "mass of i-th particle (kg)",
+            "r_i": "position vector of i-th particle (m)"
+          },
+          "description": "Weighted average position of mass distribution for system of particles."
+        },
+        {
+          "name": "Torque (moment of force)",
+          "formula": "τ = r × F,  |τ| = r F sinθ",
+          "terms": {
+            "τ": "torque vector (N·m)",
+            "r": "position vector from axis to point of force application (m)",
+            "F": "force vector (N)",
+            "θ": "angle between r and F"
+          },
+          "description": "Torque measures tendency of force to produce rotation about an axis."
+        },
+        {
+          "name": "Rotational kinematics (constant angular accel)",
+          "formula": "ω = ω_0 + α t;  θ = ω_0 t + (1/2) α t^2;  ω^2 = ω_0^2 + 2 α θ",
+          "terms": {
+            "ω": "angular velocity at time t (rad/s)",
+            "ω_0": "initial angular velocity (rad/s)",
+            "α": "angular acceleration (rad/s^2)",
+            "θ": "angular displacement (rad)",
+            "t": "time (s)"
+          },
+          "description": "Analogues of linear kinematic equations applied to rotation with constant angular acceleration."
+        },
+        {
+          "name": "Moment of inertia (discrete)",
+          "formula": "I = Σ m_i r_i^2",
+          "terms": {
+            "I": "moment of inertia about chosen axis (kg·m^2)",
+            "m_i": "mass of i-th particle (kg)",
+            "r_i": "perpendicular distance from axis (m)"
+          },
+          "description": "Measure of an object's resistance to angular acceleration about an axis."
+        },
+        {
+          "name": "Rotational dynamics (Newton's 2nd for rotation)",
+          "formula": "Στ = I α",
+          "terms": {
+            "Στ": "net torque about axis (N·m)",
+            "I": "moment of inertia (kg·m^2)",
+            "α": "angular acceleration (rad/s^2)"
+          },
+          "description": "Net torque on rigid body equals moment of inertia times angular acceleration."
+        },
+        {
+          "name": "Rotational kinetic energy",
+          "formula": "K_rot = (1/2) I ω^2",
+          "terms": {
+            "K_rot": "rotational kinetic energy (J)",
+            "I": "moment of inertia (kg·m^2)",
+            "ω": "angular speed (rad/s)"
+          },
+          "description": "Energy stored in rotation of rigid body."
+        }
+      ]
+    },
+    {
+      "chapter": "Gravitation",
+      "formulas": [
+        {
+          "name": "Universal law of gravitation",
+          "formula": "F = G (m_1 m_2) / r^2",
+          "terms": {
+            "F": "magnitude of gravitational force between two masses (N)",
+            "G": "gravitational constant (~6.674×10^-11 N·m^2/kg^2)",
+            "m_1, m_2": "masses (kg)",
+            "r": "distance between centers of masses (m)"
+          },
+          "description": "Mutual attractive force between any two point masses separated by distance r."
+        },
+        {
+          "name": "Gravitational potential energy (two masses)",
+          "formula": "U(r) = - G (m_1 m_2) / r",
+          "terms": {
+            "U(r)": "gravitational potential energy (J)",
+            "G": "gravitational constant",
+            "m_1, m_2": "masses (kg)",
+            "r": "separation between masses (m)"
+          },
+          "description": "Potential energy of two masses due to mutual gravitational attraction (zero at infinite separation)."
+        },
+        {
+          "name": "Acceleration due to gravity near Earth's surface",
+          "formula": "g = G M_E / R_E^2",
+          "terms": {
+            "g": "acceleration due to gravity at Earth's surface (m/s^2)",
+            "G": "gravitational constant",
+            "M_E": "mass of Earth (kg)",
+            "R_E": "radius of Earth (m)"
+          },
+          "description": "Derives surface gravitational acceleration from Earth's mass and radius."
+        },
+        {
+          "name": "Orbital speed (circular orbit)",
+          "formula": "v = sqrt(G M / r)",
+          "terms": {
+            "v": "orbital speed (m/s)",
+            "G": "gravitational constant",
+            "M": "mass of central body (kg)",
+            "r": "radius of orbit from center (m)"
+          },
+          "description": "Speed required for circular orbit around mass M at radius r."
+        }
+      ]
+    },
+    {
+      "chapter": "Properties of Bulk Matter (Elasticity, Fluid Mechanics basics)",
+      "formulas": [
+        {
+          "name": "Stress (normal)",
+          "formula": "σ = F / A",
+          "terms": {
+            "σ": "normal stress (Pa = N/m^2)",
+            "F": "force applied normal to area (N)",
+            "A": "cross-sectional area (m^2)"
+          },
+          "description": "Force per unit area applied perpendicular to surface."
+        },
+        {
+          "name": "Strain (linear)",
+          "formula": "ε = ΔL / L",
+          "terms": {
+            "ε": "linear (engineering) strain (dimensionless)",
+            "ΔL": "change in length (m)",
+            "L": "original length (m)"
+          },
+          "description": "Fractional change in length under tensile/compressive load."
+        },
+        {
+          "name": "Hooke's law (elastic limit)",
+          "formula": "σ = E ε",
+          "terms": {
+            "σ": "stress (Pa)",
+            "E": "Young's modulus (Pa)",
+            "ε": "strain (dimensionless)"
+          },
+          "description": "Within elastic limit, stress is proportional to strain; E is material stiffness."
+        },
+        {
+          "name": "Pressure in fluid at depth",
+          "formula": "P = P_0 + ρ g h",
+          "terms": {
+            "P": "pressure at depth h (Pa)",
+            "P_0": "pressure at surface (Pa)",
+            "ρ": "fluid density (kg/m^3)",
+            "g": "acceleration due to gravity (m/s^2)",
+            "h": "depth below surface (m)"
+          },
+          "description": "Hydrostatic pressure increases linearly with depth in incompressible fluid."
+        },
+        {
+          "name": "Buoyant force (Archimedes' principle)",
+          "formula": "F_b = ρ_fluid V_sub g",
+          "terms": {
+            "F_b": "buoyant force (N)",
+            "ρ_fluid": "density of fluid (kg/m^3)",
+            "V_sub": "volume of object submerged (m^3)",
+            "g": "acceleration due to gravity (m/s^2)"
+          },
+          "description": "Upthrust equals weight of fluid displaced by submerged portion of object."
+        }
+      ]
+    },
+    {
+      "chapter": "Thermodynamics & Heat",
+      "formulas": [
+        {
+          "name": "Zeroth/First law — change in internal energy (1st law)",
+          "formula": "ΔU = Q - W",
+          "terms": {
+            "ΔU": "change in internal energy of system (J)",
+            "Q": "heat added to the system (J) (positive if added)",
+            "W": "work done by the system (J) (positive if done by system)"
+          },
+          "description": "First law of thermodynamics: energy conservation; heat input increases internal energy or does work."
+        },
+        {
+          "name": "Work done in quasi-static expansion (pressure-volume)",
+          "formula": "W = ∫ P dV (for quasi-static process)",
+          "terms": {
+            "W": "work done by system (J)",
+            "P": "pressure (Pa)",
+            "V": "volume (m^3)"
+          },
+          "description": "Area under P-V curve gives work done during volume change."
+        },
+        {
+          "name": "Specific heat relation",
+          "formula": "Q = m c ΔT",
+          "terms": {
+            "Q": "heat added/removed (J)",
+            "m": "mass (kg)",
+            "c": "specific heat capacity (J/kg·K)",
+            "ΔT": "temperature change (K or °C)"
+          },
+          "description": "Heat required to raise temperature of mass m by ΔT at specific heat c."
+        },
+        {
+          "name": "Latent heat",
+          "formula": "Q = m L",
+          "terms": {
+            "Q": "heat absorbed or released during phase change (J)",
+            "m": "mass undergoing phase change (kg)",
+            "L": "specific latent heat (J/kg)"
+          },
+          "description": "Heat required per unit mass for phase change at constant temperature."
+        }
+      ]
+    },
+    {
+      "chapter": "Kinetic Theory of Gases",
+      "formulas": [
+        {
+          "name": "Ideal gas equation (molar form)",
+          "formula": "PV = n R T",
+          "terms": {
+            "P": "pressure (Pa)",
+            "V": "volume (m^3)",
+            "n": "number of moles (mol)",
+            "R": "universal gas constant (8.314 J/mol·K)",
+            "T": "absolute temperature (K)"
+          },
+          "description": "Equation of state for ideal gases relating P, V, and T for n moles."
+        },
+        {
+          "name": "Kinetic theory — average translational kinetic energy per molecule",
+          "formula": "(1/2) m_avg v_rms^2 = (3/2) k_B T",
+          "terms": {
+            "m_avg": "mass of one molecule (kg)",
+            "v_rms": "root-mean-square speed of molecules (m/s)",
+            "k_B": "Boltzmann constant (~1.380649×10^-23 J/K)",
+            "T": "absolute temperature (K)"
+          },
+          "description": "Relates microscopic kinetic energy of gas molecules to macroscopic temperature."
+        },
+        {
+          "name": "Relation between pressure and molecular motion",
+          "formula": "P = (1/3) ρ v_rms^2",
+          "terms": {
+            "P": "pressure (Pa)",
+            "ρ": "mass density of gas (kg/m^3)",
+            "v_rms": "root-mean-square speed (m/s)"
+          },
+          "description": "Derived from kinetic theory for ideal gas relating pressure to molecular speeds."
+        }
+      ]
+    },
+    {
+      "chapter": "Oscillations & Waves",
+      "formulas": [
+        {
+          "name": "Simple Harmonic Motion (SHM) displacement",
+          "formula": "x(t) = A cos(ω t + φ)",
+          "terms": {
+            "x(t)": "displacement from equilibrium at time t (m)",
+            "A": "amplitude (maximum displacement) (m)",
+            "ω": "angular frequency (rad/s)",
+            "φ": "phase constant (rad)",
+            "t": "time (s)"
+          },
+          "description": "General solution for displacement in SHM."
+        },
+        {
+          "name": "Angular frequency and period",
+          "formula": "ω = 2π / T = 2π f",
+          "terms": {
+            "ω": "angular frequency (rad/s)",
+            "T": "time period of oscillation (s)",
+            "f": "frequency (Hz)"
+          },
+          "description": "Connects angular frequency with period and frequency."
+        },
+        {
+          "name": "SHM for mass–spring",
+          "formula": "ω = sqrt(k / m),  T = 2π sqrt(m / k)",
+          "terms": {
+            "k": "spring constant (N/m)",
+            "m": "mass attached to spring (kg)",
+            "ω": "angular frequency (rad/s)",
+            "T": "period (s)"
+          },
+          "description": "Natural frequency and period for ideal mass-spring oscillator (no damping)."
+        },
+        {
+          "name": "Wave speed (linear medium)",
+          "formula": "v = f λ",
+          "terms": {
+            "v": "wave speed (m/s)",
+            "f": "frequency (Hz)",
+            "λ": "wavelength (m)"
+          },
+          "description": "Relation between speed, frequency and wavelength for any wave."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "WBCHSE Physics syllabus (official) — used for chapter mapping.",
+    "Byju's: Class 11 Physics formulas collection — used for formula checks and examples.",
+    "Resonance / formula booklets — concise formula lists for HS level topics.",
+    "SelfStudys formula compendium and other educational PDF formula sheets (for cross-checking).",
+    "NEET/Class exam formula PDFs (CollegeDekho summary) for kinetic/modern physics formulas."
+  ]
+}
 

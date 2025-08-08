@@ -1,4 +1,14 @@
 User-agent: *
 Disallow: /quiz.html
+Disallow: /physics-5.json
+Disallow: /physics-6.json
+Disallow: /physics-7.json
+Disallow: /physics-8.json
+Disallow: /physics-9.json
+Disallow: /physics-10.json
+Disallow: /physics-11.json
+Disallow: /physics-12.json
 User-agent: Googlebot
 Disallow: /*.gif$
+User-agent: Googlebot
+Disallow: /*.xls$

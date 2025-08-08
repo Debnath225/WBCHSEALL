@@ -52,6 +52,7 @@
       margin-bottom: 12px;
     }
     .start-btn {
+      width: -webkit-fill-available;
       align-self: center;
       margin-top: auto;
       padding: 10px 22px;

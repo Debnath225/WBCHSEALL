@@ -172,10 +172,10 @@ function renderQuestion(){
   if(q.type === 'identify_formula'){
     qtext = `Which of the following is the correct formula for: "${q.name}"?`;
 
-    (hintToggled())?(hintContent.textContent = q.description || "No hint available") : hintContent.textContent="";
+    (hintToggled() == 1)?(hintContent.textContent = q.description || "No hint available") : hintContent.textContent="";
   } else if(q.type === 'term_meaning'){
     qtext = `In the formula "${q.formula || ''}", what does "${q.term}" represent?`;
-    (hintToggled())?(hintContent.textContent = q.description || "No hint available") :hintContent.textContent="";
+    (hintToggled() == 1)?(hintContent.textContent = q.description || "No hint available") :hintContent.textContent="";
   } else {
     qtext = q.name || "Identify the correct option";
   }

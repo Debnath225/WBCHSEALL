@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz Test Interface</title>
+<link re="stylesheet" href="interface.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Class 5-12 Quiz Test Selection</h1>
+    <div class="card-grid">
+      <div class="quiz-card" onclick="startQuiz(5)">
+        <div class="quiz-title">Class 5 Quiz</div>
+        <div class="quiz-details">Fun and engaging questions for young learners. Subjects: Math, Science, English.</div>
+        <div class="quiz-meta">10 Questions • 15 Minutes • Difficulty: Easy</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <div class="quiz-card" onclick="startQuiz(6)">
+        <div class="quiz-title">Class 6 Quiz</div>
+        <div class="quiz-details">Test your knowledge in Math, Science, and Social Studies.</div>
+        <div class="quiz-meta">12 Questions • 18 Minutes • Difficulty: Easy-Medium</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <div class="quiz-card" onclick="startQuiz(7)">
+        <div class="quiz-title">Class 7 Quiz</div>
+        <div class="quiz-details">Challenging quizzes to boost your skills. Subjects: Math, Science, English.</div>
+        <div class="quiz-meta">15 Questions • 20 Minutes • Difficulty: Medium</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <div class="quiz-card" onclick="startQuiz(8)">
+        <div class="quiz-title">Class 8 Quiz</div>
+        <div class="quiz-details">Sharpen your concepts in Math, Science, and Social Science.</div>
+        <div class="quiz-meta">15 Questions • 20 Minutes • Difficulty: Medium</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <div class="quiz-card" onclick="startQuiz(9)">
+        <div class="quiz-title">Class 9 Quiz</div>
+        <div class="quiz-details">Prepare for higher classes with advanced quizzes. Subjects: Math, Science, English.</div>
+        <div class="quiz-meta">20 Questions • 25 Minutes • Difficulty: Medium-Hard</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <div class="quiz-card" onclick="startQuiz(10)">
+        <div class="quiz-title">Class 10 Quiz</div>
+        <div class="quiz-details">Board exam level questions for practice. Subjects: Math, Science, Social Science.</div>
+        <div class="quiz-meta">25 Questions • 30 Minutes • Difficulty: Hard</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+      <div class="quiz-card" onclick="startQuiz(12)">
+        <div class="quiz-title">Class 12 Quiz</div>
+        <div class="quiz-details">Test your preparation for final exams. Subjects: Physics, Chemistry, Math/Biology.</div>
+        <div class="quiz-meta">30 Questions • 40 Minutes • Difficulty: Advanced</div>
+        <button class="start-btn">Start Quiz</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function startQuiz(classNum) {
+      alert('Starting Quiz for Class ' + classNum + '!');
+      // You can replace this with navigation or modal logic as needed.
+    }
+  </script>
+</body>

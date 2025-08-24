@@ -32,7 +32,8 @@ Practice all of your syllabus — from Class 5 to Class 12!
 3. **Start practicing:**
    - Choose your class from the main page.
    - Click "Start Quiz" to begin.
-
+## 📲 Screenshot
+<img src="screenshot.png"/>
 ## 📁 Project Structure
 
 ```
